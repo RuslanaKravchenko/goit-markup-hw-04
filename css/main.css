@@ -5,6 +5,7 @@
   text-align: center;
   background-color: var(--hero-color);
   background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
   background-position: center;
 }
 
