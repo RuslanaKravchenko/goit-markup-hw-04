@@ -66,6 +66,9 @@ img {
 }
 
 .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   outline: 1px dotted turquoise;
 }
 
@@ -163,7 +166,10 @@ img {
 }
 
 .contacts__link {
-  display: block;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -175,9 +181,15 @@ img {
   text-decoration: none;
 }
 
+.contacts__icon {
+  margin-right: 10px;
+}
+
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-color);
+  --color-envelope: var(--accent-color);
+  --color-smartphone: var(--accent-color);
 }
 
 /* Footer */
@@ -187,6 +199,15 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--accent-bg-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__contacts {
+  margin-right: 70px;
 }
 
 .logo__footer {
@@ -210,3 +231,79 @@ img {
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.social-networks {
+}
+
+.social-networks__title {
+  display: block;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+}
+
+.social-networks__list {
+  display: flex;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .social-networks__link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-networks__link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-networks__link--instagram {
+  background-image: url('../images/instagram-white.svg');
+}
+
+.social-networks__link--twitter {
+  background-image: url('../images/twitter-white.svg');
+}
+
+.social-networks__link--facebook {
+  background-image: url('../images/facebook-white.svg');
+}
+
+.social-networks__link--linkedin {
+  background-image: url('../images/linkedin-white.svg');
+} */
+
+/* .action {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
+  list-style: none;
+}
+.test {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+}
+.test-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.test:hover {
+  background-color: #2196f3;
+  --color2: #fff;
+} */
