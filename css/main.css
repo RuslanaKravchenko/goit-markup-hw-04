@@ -2,7 +2,6 @@
 
 .hero__wrapper {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-color);
@@ -69,9 +68,12 @@
 }
 
 .features-list__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--secondary-bg-color);
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -160,6 +162,10 @@
   display: flex;
 }
 
+.regular-clients__item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
+
 .regular-clients__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -168,7 +174,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
